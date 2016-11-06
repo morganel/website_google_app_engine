@@ -3,7 +3,7 @@
 To run locally: 
 dev_appserver.py .
 
-To push: 
+To deploy: 
 appcfg.py -A __PROJECT_NAME___ -V v1 update .
 
 Code to edit in: 
