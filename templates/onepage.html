@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Morgane and Santiago</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../static/css/jquery.countdown.css"> 
+  <script type="text/javascript" src="../static/js/jquery.plugin.js"></script> 
+  <script type="text/javascript" src="../static/js/jquery.countdown.js"></script>
+  <link rel="stylesheet" type="text/css" href="../static/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="../static/css/blueimp-gallery.min.css">
+  <script src="../static/js/blueimp-gallery.min.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="../static/css/bootstrap-image-gallery.min.css">
+  <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+  <script src="../static/js/bootstrap-image-gallery.min.js"></script>
+  <style>
+  body {
+      font-family: 'Montserrat', arial, sans-serif;
+      color: #413a38;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  h3, h4 {
+      letter-spacing: 0px;
+      font-size: 60px;
+      color: rgb(65, 58, 56);
+      font-weight: bold;
+  }
+
+  @media (max-width: 767px) {
+    h3 {
+    font-size: 42px;
+    margin-bottom: 60px;
+    }
+  }
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; 
+}
+
+  .carousel-inner img {
+      width: 100%; 
+      max-height: 600px;
+      margin: auto;
+  }
+
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  
+  .container h3 {
+    font-family: 'Satisfy', cursive; 
+    letter-spacing: 0px;
+  }
+
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: White;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 1;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #d5d5d5 !important;
+      font-family: Montserrat, sans-serif;
+  }
+
+  .navbar .navbar-brand {
+      color: #d5d5d5 !important;
+      font-size: 48px;
+      font-family: 'Tangerine', serif;
+  }
+
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }
+
+  .navbar-nav > li > a:hover,.navbar-nav > li > a:focus{
+    background-color: transparent;
+    color: #FFC0CB;
+    outline: none !important;
+  }
+
+  .form-control {
+      border-radius: 0;
+  }
+
+  textarea {
+      resize: none;
+  }
+
+  .header {
+    background: #413a38 url('../images/bearcalsmall.png') no-repeat 0px -30px;
+    color: #fff;
+  }
+  
+  .navbar-toggle {
+    margin-bottom: 0;
+    padding: 9px 5px;
+  }
+
+  @media(min-width: 768px) {
+    .navbar-header {
+      float:left;
+    }
+  }
+  .text-center {
+    text-align: center;
+  }
+
+  @media(min-width: 768px) {
+    .navbar-header {
+      float:left;
+    }
+  }
+
+  @media(min-width: 768px) {
+    .navbar-nav {
+      float:none;
+    }
+  }
+
+  .navbar-nav {
+      display:inline-block;
+  }
+
+  @media (min-width: 992px) {
+    .nav > li > a {
+      padding: 15px 30px;
+    }
+  }
+
+  .nav > li > a {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+  .nav > li.active > a {
+      color: #f4af9c;
+  }
+
+  .hero-section {
+    margin-top: 55px;
+    background: #262220 url('../images/gallery/turtle2_min_small.jpg') no-repeat 50% top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .hero-section.item2 {
+    background: #262220 url('../images/gallery/bigisland2_min_small.jpg') no-repeat 50% top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .hero-section.item3 {
+    background: #262220 url('../images/gallery/ski2_min_small.jpg') no-repeat 50% top; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  @media (min-width: 992px) {
+    .hero-box {
+      width: 470px;
+    }
+  }
+  .hero-box {
+    background: rgba(0,0,0,0.6);
+    color: rgba(255,255,255,0.85);
+    padding: 30px;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    height: 760px;
+  }
+
+  .script {
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+  }
+
+  .headline .names {
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 767px) {
+    .headline .names {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+  .display-block {
+    display: block;
+  }
+
+  @media (min-width: 992px) {
+    .headline .statement {
+      font-size: 40px;
+    }
+  }
+
+  .headline .statement {
+    font-size: 36px;
+    margin-bottom: 45px;
+  }
+
+  a.btn-primary, btn-primary {
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    background: rgb(54,179,168);
+    padding: 15px 45px;
+  }
+
+  .hero-box a:hover, .hero-box a:focus, .hero-box a:active, .hero-box a:active:focus {
+    background: #f4af9c;
+  }
+
+  .btn:focus,.btn:active {
+     outline: none !important;
+  }
+
+  a.btn, .btn {
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+
+  .btn-rsvp {
+    position: relative;
+    z-index: 20;
+  }
+
+  #wedding {
+    padding-top: 90px;
+  }
+
+  #registry {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .title-deco-left {
+    background: transparent url('../images/flower_left_svg_4.svg') no-repeat left bottom;
+    width: 75px;
+    height: 86px;
+    display: inline-block;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+  }
+  .title-deco-right {
+    background: transparent url('../images/flower_right_svg_4.svg') no-repeat right bottom;
+    width: 75px;
+    height: 86px;
+    display: inline-block;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+  }
+  
+  @media (max-width: 767px) {
+    .title-deco-right, .title-deco-left{
+      width: 40px;
+      height: 45px;
+    }
+
+  }
+
+  #countdown {
+    margin-bottom: 60px;
+  }
+
+  #wedding .cols-wrapper {
+    margin-bottom: 45px;
+  }
+
+  #wedding .col-inner {
+    padding: 60px 30px;
+    background: #f5f5f5;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+
+  #wedding .subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 30px
+  }
+
+  #wedding .intro {
+    margin-bottom: 30px;
+    color: #786b67;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  #wedding .meta-list {
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  #wedding .meta-list li {
+    margin-bottom: 15px
+  }
+
+  #wedding .glyphicon {
+    font-size: 32px;
+    width: 55px;
+    display: inline-block;
+    color: #f4af9c;
+    vertical-align: middle;
+  }
+
+  #wedding .love-icon {
+    font-size: 32px;
+    width: 55px;
+    display: inline-block;
+    color: #f4af9c;
+    vertical-align: middle;
+  }
+
+a {
+  color: #f4af9c;
+}
+
+#wedding .meta-list .list-link {
+  padding-left: 55px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#wedding .action-wrapper {
+  margin-bottom: 90px;
+}
+#contact {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+a.btn-primary, .btn-primary {
+  background: #f4af9c;
+  border: none;
+  color: #fff;
+  padding: 15px 45px;
+  text-transform: uppercase;
+}
+
+#map-container { height: 460px; }
+#map-container .gm-style {
+  pointer-events: none;
+}
+
+#map-container .map-title {
+  font-size: 24px;
+}
+
+#map-container .note {
+  font-size: 16px;
+  margin-bottom: 5px
+}
+
+#topcontrol {
+  background: #f4af9c;
+  color:#fff;
+  text-align: center;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border:none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  z-index: 30;
+}
+#topcontrol .fa {
+  position: relative;
+  top: 3px;
+  font-size:  25px;
+}
+
+.message-inner {
+  max-width: 600px;
+  padding: 30px;
+}
+
+.message-container .intro {
+  margin-bottom: 30px;
+  color: #786b67;
+}
+.message-container .thank-you {
+  font-size: 46px;
+  color: #f4af9c;
+  margin-bottom: 15px;
+}
+.message-container .signature {
+  font-size: 28px;
+  color: #786b67;
+}
+
+.gift-registry {
+  font-size: 28px;
+}
+
+#topcontrol .glyphicon-chevron-up {
+  padding-top: 10px;
+}
+#topcontrol .up-arrow {
+  color: #fff;
+}
+
+#gallery {
+  background: #f5f5f5;
+  padding-top: 90px;
+  padding-bottom :90px;
+}
+
+#gallery .intro {
+  margin-bottom: 60px;
+  color: #786b67;
+}
+
+.photos-wrapper {
+  overflow: hidden;
+}
+
+.photos-wrapper .item.w2 {
+  width: 50%;
+}
+
+.photos-wrapper .item {
+  display: inline-block;
+  width: 25%;
+  float: left;
+}
+
+#selectlanguage{
+  color: #000000;
+}
+
+.main {
+  margin: 0 auto -60px;
+}
+.main .img-responsive {
+  margin-bottom: 30px;
+}
+
+.indiv_address {
+  margin-bottom: 40px;
+}
+
+.language { position: absolute; top: -5px; right: 80px; padding: 20px; }
+
+@media (min-width: 768px) {
+  .language { position: absolute; top: -5px; right: 5px; padding: 20px; }
+}
+
+</style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<header id="header" class="header navbar-fixed-top">  
+        <div class="alert alert-success" id="success-alert" style="display: none;">
+          <button type="button" class="close" data-dismiss="alert">x</button>
+          <strong class="english">You are registered! </strong>
+          <span class="english"> Can't wait to see you there!</span>
+          <strong class="spanish" style="display: none;">Esta registrado </strong>
+          <span class="spanish" style="display: none;"> !No podemos esperar de verle!</span>
+          <strong class="french" style="display: none;">Vous etes enregistres </strong>
+          <span class="french" style="display: none;"> Nous avons hate de vous voir !</span>
+        </div>
+        <div class="alert alert-danger" id="fail-alert" style="display: none;">
+          <button type="button" class="close" data-dismiss="alert">x</button>
+          <strong class="english">You are NOT registered! </strong>
+          <span class="english">Please try again...</span>
+          <strong class="spanish" style="display: none;">No esta registrado </strong>
+          <span class="spanish" style="display: none;">Por favor trate una vez mas</span>
+         <strong class="french" style="display: none;">Votre reponse n'a pas ete enregistree </strong>
+          <span class="french" style="display: none;">Reessayez s'il vous plait...</span>          
+        </div>
+        <div class="container ">       
+            <nav class="main-nav" role="navigation">
+                <div class="navbar-header text-center">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="toggle-title">Menu</span>
+                        <span class="icon-bar-wrapper">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span><!--//icon-bar-wrapper-->
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->
+                <div id="navbar-collapse" class="navbar-collapse collapse  text-center">
+                    <ul class="nav navbar-nav center-block">
+                        <li class="nav-item english"><a class="scrollto" href="#wedding">The Wedding</a></li>   
+                        <li class="nav-item spanish" style="display: none;"><a class="scrollto" href="#wedding">El Matrimonio</a></li>      
+                        <li class="nav-item french" style="display: none;"><a class="scrollto" href="#wedding">Le Mariage</a></li>                                            
+                        <li class="nav-item english"><a class="scrollto" href="#registry">Registries</a></li>
+                        <li class="nav-item spanish" style="display: none;"><a class="scrollto" href="#registry">Regalos</a></li>
+                        <li class="nav-item french" style="display: none;"><a class="scrollto" href="#registry">Liste</a></li>
+                        <li class="nav-item english" ><a class="scrollto" href="#gallery">Gallery</a></li>
+                        <li class="nav-item spanish" style="display: none;"><a class="scrollto" href="#gallery">Fotos</a></li>
+                        <li class="nav-item french" style="display: none;"><a class="scrollto" href="#gallery">Photos</a></li>
+                        <li class="nav-item english"><a class="scrollto" href="#contact">Contact</a></li>
+                        <li class="nav-item spanish" style="display: none;"><a class="scrollto" href="#contact">Contacto</a></li>
+                        <li class="nav-item french" style="display: none;"><a class="scrollto" href="#contact">Contact</a></li>
+                        <li class="nav-item english"><a href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP</a></li>
+                        <li class="nav-item spanish" style="display: none;"><a href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP</a></li>
+                        <li class="nav-item french" style="display: none;"><a href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div><!--//container-->
+        <div class="language">
+          <select id="selectlanguage">
+              <option id="english" value="english">English</option>
+              <option id="spanish" value="spanish">Espanol</option>
+              <option id="french" value="french">Francais</option>
+          </select>
+          </div>
+    </header>
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="item active hero-section">
+          <div class="container text-center">
+             <div class="row">
+                 <div class="hero-box col-md-5 col-sm-7 col-xs-12">
+                    <h1 class="headline script">
+                      <span class="names display-block">Morgane &amp; Santiago</span>
+                    </h1>
+                    <div class="date">
+                      <span class="date-text english">August 5, 2017</span>
+                      <span class="date-text spanish" style="display: none;">Agosto 5, 2017</span>
+                      <span class="date-text french" style="display: none;">5 Aout 2017</span>
+                      <br>
+                      <span class="date-text english">Lake Tahoe</span>
+                      <span class="date-text spanish" style="display: none;">Lago Tahoe</span>
+                      <span class="date-text french" style="display: none;">Lac Tahoe</span>
+                      <br>
+                      <br>
+                    </div>
+                    <a class="btn btn-primary btn-rsvp english" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Now</a>
+                    <a class="btn btn-primary btn-rsvp spanish" style="display: none;" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Ahora</a>
+                    <a class="btn btn-primary btn-rsvp french" style="display: none;" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Maintenant</a>
+                 </div>
+             </div>
+        </div>
+      </div>
+
+
+      <div class="item item2 hero-section">
+          <div class="container text-center">
+             <div class="row">
+                 <div class="hero-box col-md-5 col-sm-7 col-xs-12">
+                    <h1 class="headline script">
+                      <span class="names display-block">Morgane &amp; Santiago</span>
+                    </h1>
+                    <div class="date">
+                      <span class="date-text english">August 5, 2017</span>
+                      <span class="date-text spanish" style="display: none;">Agosto 5, 2017</span>
+                      <span class="date-text french" style="display: none;">5 Aout 2017</span>
+                      <br>
+                      <span class="date-text english">Lake Tahoe</span>
+                      <span class="date-text spanish" style="display: none;">Lago Tahoe</span>
+                      <span class="date-text french" style="display: none;">Lac Tahoe</span>
+                      <br>
+                      <br>
+                    </div>
+                    <a class="btn btn-primary btn-rsvp english" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Now</a>
+                    <a class="btn btn-primary btn-rsvp spanish" style="display: none;" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Ahora</a>
+                    <a class="btn btn-primary btn-rsvp french" style="display: none;" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Maintenant</a>
+                 </div>
+             </div>
+        </div>
+      </div>
+
+      <div class="item item3 hero-section">
+          <div class="container text-center">
+             <div class="row">
+                 <div class="hero-box col-md-5 col-sm-7 col-xs-12">
+                    <h1 class="headline script">
+                      <span class="names display-block">Morgane &amp; Santiago</span>
+                    </h1>
+                    <div class="date">
+                      <span class="date-text english">August 5, 2017</span>
+                      <span class="date-text spanish" style="display: none;">Agosto 5, 2017</span>
+                      <span class="date-text french" style="display: none;">5 aout 2017</span>
+                      <br>
+                      <span class="date-text english">Lake Tahoe</span>
+                      <span class="date-text spanish" style="display: none;">Lago Tahoe</span>
+                      <span class="date-text french" style="display: none;">Lac Tahoe</span>
+                      <br>
+                      <br>
+                    </div>
+                    <a class="btn btn-primary btn-rsvp english" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Now</a>
+                    <a class="btn btn-primary btn-rsvp spanish" style="display: none;" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Ahora</a>
+                    <a class="btn btn-primary btn-rsvp french" style="display: none;" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Maintenant</a>
+                 </div>
+             </div>
+        </div>
+      </div>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+    </div>
+</div>
+
+<div id="wedding" class="container text-center">
+  <h3>
+    <span class="title-deco-left"></span>
+    <span class="title-text english">The Wedding</span>
+    <span class="title-text spanish" style="display: none;">El matrimonio</span>
+    <span class="title-text french" style="display: none;">Le mariage</span>
+    <span class="title-deco-right"></span>
+  </h3>
+  <div id="countdown"></div>
+
+  <div class="row cols-wrapper">
+    <div class="ceremony-col col-xs-12 col-sm-6">
+        <div class="col-inner">
+            <h4 class="subtitle english">Ceremony</h4>
+            <h4 class="subtitle spanish" style="display: none;">Fiesta</h4>
+            <h4 class="subtitle french" style="display: none;">Ceremonie</h4>
+            <p class="intro english">We are getting married in a private house by the lake. After the ceremony, there will be food, drinks and surprises during the cocktail and dinner.</p>
+            <p class="intro spanish" style="display: none;">Nos casamos en una casa cerca del lago. Depues del matrimonia, haria comida, bebidas y sorpresas durante la cena.</p>
+            <p class="intro french" style="display: none;">Nous nous marions dans une maison au bord du lac. Il y aura de la nourriture, des boissons et des surprises pendant le cocktail et le diner</p>
+            <ul class="meta-list list-unstyled text-left center-block">
+                <li class="english"><span class="glyphicon glyphicon-calendar"></span>Saturday - Aug 5th, 2017</li>
+                <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-calendar"></span>Sabado - Aug 5, 2017</li>
+                <li class="french" style="display: none;"><span class="glyphicon glyphicon-calendar"></span>Samedi - 5 aout 2017</li>
+                <li class="english"><span class="glyphicon glyphicon-time"></span>2.30pm</li>
+                <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-time"></span>14h30</li>
+                <li class="french" style="display: none;"><span class="glyphicon glyphicon-time"></span>14h30</li>
+                <li class="english"><span class="glyphicon glyphicon-map-marker"></span>House
+                    <br>
+                    <span class="direction-info display-block list-link"><a href="#" data-toggle="modal" data-target="#direction-modal">How to get there</a></span>
+                    <span class="facilities-info display-block list-link"><a href="#" data-toggle="modal" data-target="#facilities-modal">Facilities</a></span>
+                </li>
+                <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-map-marker spanish"></span>Casa
+                    <br>
+                    <span class="direction-info display-block list-link"><a href="#" data-toggle="modal" data-target="#direction-modal">Como ir</a></span>
+                    <span class="facilities-info display-block list-link"><a href="#" data-toggle="modal" data-target="#facilities-modal">Instalaciones</a></span>
+                </li>
+                <li class="french" style="display: none;"><span class="glyphicon glyphicon-map-marker french"></span>Maison
+                    <br>
+                    <span class="direction-info display-block list-link"><a href="#" data-toggle="modal" data-target="#direction-modal">Comment y aller</a></span>
+                    <span class="facilities-info display-block list-link"><a href="#" data-toggle="modal" data-target="#facilities-modal">Installations</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="reception-col col-xs-12 col-sm-6">
+        <div class="col-inner">
+            <h4 class="subtitle english">Parking and After-Party</h4>
+            <h4 class="subtitle spanish" style="display: none;">Estacionamiento y Depues-Fiesta</h4>
+            <h4 class="subtitle french" style="display: none;">Parking et Soiree</h4>
+            <p class="intro english">The after party will take place at the Biltmore Hotel, 2 miles from the house. Shuttles will bring the guests from the hotel to the house and back.</p>
+            <p class="intro spanish" style="display: none;">La Depues-Fiesta estara en el hotel Biltmore, 2 millos de la casa. Carros traeran los invitados del hotel hasta la casa y back,</p>
+            <p class="intro french" style="display: none;">La soiree aura lieu a l'hotel Biltmore, a 2 km de la maison. Des navettes ameneront des invites de l'hotel a la maison et back.</p>
+            <ul class="meta-list list-unstyled text-left center-block">
+                <li class="english"><span class="glyphicon glyphicon-calendar"></span>Saturday - Aug 5th, 2017</li>
+                <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-calendar"></span>Sabado - Aug 5, 2017</li>
+                <li class="french" style="display: none;"><span class="glyphicon glyphicon-calendar"></span>Samedi - 5 aout 2017</li>
+                <li class="english"><span class="glyphicon glyphicon-time"></span>9.30pm</li>
+                <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-time"></span>21h30</li>
+                <li class="french" style="display: none;"><span class="glyphicon glyphicon-time"></span>21h30</li>
+                <li class="english"><span class="glyphicon glyphicon-map-marker"></span>Biltmore Hotel and Casino
+                    <br>
+                    <span class="direction-info display-block list-link"><a href="#" data-toggle="modal" data-target="#direction-modal">How to get there</a></span>
+                    <span class="facilities-info display-block list-link"><a href="#" data-toggle="modal" data-target="#facilities-modal">Facilities</a></span>
+                </li>
+                <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-map-marker spanish"></span>Biltmore Hotel y Casino
+                    <br>
+                    <span class="direction-info display-block list-link"><a href="#" data-toggle="modal" data-target="#direction-modal">Como ir</a></span>
+                    <span class="facilities-info display-block list-link"><a href="#" data-toggle="modal" data-target="#facilities-modal">Instalaciones</a></span>
+                </li>
+                <li class="french" style="display: none;"><span class="glyphicon glyphicon-map-marker french"></span>Biltmore Hotel et Casino
+                    <br>
+                    <span class="direction-info display-block list-link"><a href="#" data-toggle="modal" data-target="#direction-modal">Comment y aller</a></span>
+                    <span class="facilities-info display-block list-link"><a href="#" data-toggle="modal" data-target="#facilities-modal">Installations</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+
+  <div class="action-wrapper">
+    <a class="btn btn-primary english" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Now</a>
+    <a class="btn btn-primary spanish" style="display: none;" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Ahora</a>
+    <a class="btn btn-primary french" style="display: none;" href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP Maintenant</a>
+  </div>
+</div> 
+
+<div id="map-container"></div>
+
+<!-- Container (Registry Section) -->
+<div id="registry" class="registry container text-center">
+  <h3>
+    <span class="title-deco-left"></span>
+    <span class="title-text english">Registries</span>
+    <span class="title-text spanish" style="display: none;">Regalos</span>
+    <span class="title-text french" style="display: none;">Liste</span>
+    <span class="title-deco-right"></span>
+  </h3>
+  <div class="message-container">
+    <div class="message-inner center-block">
+      <div class="intro english">We created two gift registries: one in France and one in the US.</div>
+      <div class="intro spanish" style="display: none;">Tenemos dos listas de regalos. Una en Francia y una en los EEUU.</div>
+      <div class="intro french" style="display: none;">Nous avons cree deux listes : une en France et une aux Etats-Unis.</div>
+      <div class="thank-you script english">Thank you so much! :)</div>
+      <div class="thank-you script spanish" style="display: none;">!Muchas gracias! :)</div>
+      <div class="thank-you script french" style="display: none;">Merci beaucoup ! :)</div>
+      <div class="signature script">Morgane &amp; Santiago</div>
+      <div class="couple-profile animated bounceIn delayp3" style="opacity: 0;"></div>
+      </div><!--//message-inner-->
+  </div>
+
+
+    <div class="row">
+      <div class="col-md-6 text-center gift-registry">
+        <strong class="english">Registry in France - </strong>
+        <strong class="spanish" style="display: none;">Lista en Francia - </strong>
+        <strong class="french" style="display: none;">Liste en France - </strong>
+        <span class="glyphicon glyphicon-euro"></span><br>
+        <a target="_blank" href="http://www.millemercismariage.com/morgane-and-santiago/liste.html">Mille Mercis</a>
+      </div>
+      <div class="col-md-6 text-center gift-registry">
+        <strong class="english">Registry in the US - </strong>
+        <strong class="spanish" style="display: none;">Lista en los EEUU - </strong>
+        <strong class="french" style="display: none;">Liste aux Etats-Unis - </strong>
+        <span class="glyphicon glyphicon-usd"></span><br> 
+        <a target="_blank" href="http://morgane-and-santiago.zankyou.com/us">ZankYou</a>
+      </div>
+    <br>
+  </div>
+</div>  
+
+<!-- <section id="gallery" class="gallery-section section"> -->
+<div id="gallery" class="container text-center">
+    <h3>
+      <span class="title-text english">Gallery</span>
+      <span class="title-text spanish" style="display: none;">Fotos</span>
+      <span class="title-text french" style="display: none;">Photos</span>
+    </h3>
+    <div class="intro english">Some pictures of us. You can click on them ;) </div>
+    <div class="intro spanish" style="display: none;">Algunas fotos de nosotros. Puede clickar sobre las fotos ;)</div>
+    <div class="intro french" style="display: none;">Quelques photos de nous. Vous pouvez cliquer sur les photos ;) </div>
+      <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+      <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
+          <!-- The container for the modal slides -->
+          <div class="slides"></div>
+          <!-- Controls for the borderless lightbox -->
+          <h3 class="title"></h3>
+          <a class="prev">‹</a>
+          <a class="next">›</a>
+          <a class="close">×</a>
+          <a class="play-pause"></a>
+          <ol class="indicator"></ol>
+          <!-- The modal dialog, which will be used to wrap the lightbox content -->
+          <div class="modal fade">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title"></h4>
+                      </div>
+                      <div class="modal-body next"></div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-default pull-left prev">
+                              <i class="glyphicon glyphicon-chevron-left"></i>
+                              Previous
+                          </button>
+                          <button type="button" class="btn btn-primary next">
+                              Next
+                              <i class="glyphicon glyphicon-chevron-right"></i>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+            <div class="main container grid-custom">
+                <div class="row">
+                  <div class="col-sm-6"><a href="../images/gallery/ecuador_min_small.jpg" data-gallery=""><img src="../images/gallery/ecuador_min_small.jpg" alt="" class="img-responsive center-block"></a></div>
+                  <div class="row col-sm-6">
+                    <div class="col-xs-6 item"><a href="../images/gallery/eiffeltower.jpg" data-gallery=""><img class="img-responsive" src="../images/gallery/eiffeltower.jpg" alt=""></a></div>
+                    <div class="col-xs-6 item"><a href="../images/gallery/carterlake_min_small.jpg" data-gallery=""><img class="img-responsive" src="../images/gallery/carterlake_min_small.jpg" alt=""></a></div>
+                    <div class="col-xs-6 item"><a href="../images/gallery/graduation_min_small.jpg" data-gallery=""><img class="img-responsive" src="../images/gallery/graduation_min_small.jpg" alt=""></a></div>
+                    <div class="col-xs-6 item"><a href="../images/gallery/bearski.jpg" data-gallery=""><img class="img-responsive" src="../images/gallery/bearski.jpg" alt=""></a></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="row col-sm-6">
+                    <div class="col-xs-6 item"><a href="../images/gallery/skibetter_min_small.jpg" data-gallery=""><img class="img-responsive" src="../images/gallery/skibetter_min_small.jpg" alt=""></a></div>
+                    <div class="col-xs-6 item"><a href="../images/gallery/angel-island_min_small.jpg" data-gallery=""><img class="img-responsive" src="../images/gallery/angel-island_min_small.jpg" alt=""></a></div>
+                    <div class="col-xs-6 item"><a href="../images/gallery/staubin_min_small.jpg" data-gallery=""><img class="img-responsive" src="../images/gallery/staubin_min_small.jpg" alt=""></a></div>
+                    <div class="col-xs-6 item"><a href="../images/gallery/aloha_diving.jpg" data-gallery=""><img class="img-responsive" src="../images/gallery/aloha_diving.jpg" alt=""></a></div>
+                  </div>
+                  <div class="col-sm-6"><a href="../images/gallery/gdcanyon_min_small.jpg" data-gallery=""><img src="../images/gallery/gdcanyon_min_small.jpg" alt="" class="img-responsive center-block"></a></div>
+                </div>
+              </div>
+
+
+</div><!--//container-->
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container text-center">
+  <h3>
+    <span class="title-deco-left"></span>
+    <span class="title-text english">Contact us</span>
+    <span class="title-text spanish" style="display: none;">Contactenos</span>
+    <span class="title-text french" style="display: none;">Contact</span>
+    <span class="title-deco-right"></span>
+  </h3>
+  <p class="text-center english"><em>Any questions? Here is how to contact us:</em></p><br>
+  <p class="text-center spanish" style="display: none;"><em>Algunas preguntas? Aqui esta como contactarnos:</em></p><br>
+  <p class="text-center french" style="display: none;"><em>Questions ? Voici comment nous contacter :</em></p><br>
+  <div class="row">
+    <div class="col-md-4 indiv_address">
+      <strong>Morgane</strong>
+      <br><br>
+      <p class="english"><span class="glyphicon glyphicon-phone english"></span>Phone: +1 408 858 9849</p>
+      <p class="spanish" style="display: none;"><span class="glyphicon glyphicon-phone spanish"></span>Telefono: +1 408 858 9849</p>
+      <p class="french" style="display: none;"><span class="glyphicon glyphicon-phone french"></span>Telephone : +1 408 858 9849</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: morganelustman@gmail.com</p>
+    </div>
+    <div class="col-md-4 indiv_address">
+      <strong>Santiago</strong>
+      <br><br>
+      <p class="english"><span class="glyphicon glyphicon-phone english"></span>Phone: +1 650 391 6001</p>
+      <p class="spanish" style="display: none;"><span class="glyphicon glyphicon-phone spanish"></span>Telefono: +1 650 391 6001</p>
+      <p class="french" style="display: none;"><span class="glyphicon glyphicon-phone french"></span>Telephone : +1 650 391 6001</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: padronas@gmail.com</p>
+    </div>
+    <div class="col-md-4 indiv_address">
+      <strong class="english">Our home address</strong>
+      <strong class="spanish" style="display: none;">Direccion de nuestra casa</strong>
+      <strong class="french" style="display: none;">Notre adresse</strong>
+      <br><br>
+      <address><span class="glyphicon glyphicon-map-marker"></span>
+        1901 Garden Dr. #210<br> 
+        Burlingame, CA 94010 USA
+      </address>
+    </div>
+  </div>
+</div>  
+
+
+<div id="topcontrol" href="#myPage" title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 1; cursor: pointer;">
+<a class="up-arrow" href="#myPage">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p class="english">We hope to see you soon!</p>
+  <p class="spanish" style="display: none;">!Esperamos verle pronto!</p>
+  <p class="french" style="display: none;">Nous esperons vous voir bientot !</p>
+</footer>
+
+<!-- RSVP modal -->
+<div id="rsvp-modal" class="modal modal-rsvp in" tabindex="-1" role="dialog" aria-labelledby="rsvpModalLabel" aria-hidden="true" style="display: none; padding-left: 0px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h2 id="rsvpModalLabel" class="modal-title text-center">
+                        <!--<span class="title script display-block"><span class="title-text">RSVP</span></span>-->
+                        <span class="subtitle display-block english">Come and celebrate with us! <br> Please RSVP by March 1, 2017</span>
+                        <span class="subtitle display-block spanish" style="display: none;">!Venga y celebra con nosotros! <br> Por favor RSVP antes del 1 Marzo de 2017</span>
+                        <span class="subtitle display-block french" style="display: none;">Venez celebrer avec nous !<br> RSVP avant le 1er mars 2017 s'il vous plait</span>
+                    </h2>
+                    
+                </div><!--//modal-header-->
+                <div class="modal-body">
+                    <form id="rsvp-form" class="rsvp-form form english" method="post" action="javascript:handleClick()">     
+                        <div id="form-messages" class="text-center"></div>                  
+                        <div class="row text-left">   
+                            <div class="name-group form-group col-xs-12 col-sm-6">
+                                <div class="form-group-inner">
+                                    <label for="cname">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" minlength="2">
+                                </div>
+                            </div>                    
+                            <div class="email-group form-group col-xs-12 col-sm-6">
+                                <div class="form-group-inner">
+                                    <label for="cemail">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your email address">
+                                </div>
+                            </div>
+                            
+                            <div class="events-group form-group col-xs-12 col-sm-6">
+                                <div class="form-group-inner">
+                                    <label for="cevents" >Are you attending?</label>
+                                    <select class="form-control" id="events" name="events" >                       
+                                        <option value="" selected="">Please select</option> 
+                                        <option value="Yes">Yes, I'll be there</option>
+                                        <option value="No">Sorry, can't make it</option>
+                                    </select>          
+                                </div>       
+                            </div>      
+                            
+                            <div class="guests-group form-group col-xs-12 col-sm-6">
+                                <div class="form-group-inner">
+                                    <label for="cguests">How many guests are you bringing?</label>
+                                    <select class="form-control" id="guest_ct" name="guest_ct">
+                                        <option value="" selected="">Please select</option>
+                                        <option value="0">No Guests</option>
+                                        <option value="1">1 Guest</option>
+                                        <option value="2">2 Guests</option>
+                                        <option value="3">3 Guests</option>
+                                        <option value="4">4 Guests</option>
+                                        <option value="5">5 Guests</option>
+                                        <option value="6">6 Guests</option>
+                                        <option value="7">7 Guests</option>
+                                        <option value="8">8 Guests</option>
+                                        <option value="9">9 Guests</option>
+                                        <option value="10">10 Guests</option>
+                                    </select>   
+                                </div>    
+                            </div>                                                
+                            <div class="message-group form-group col-xs-12">
+                                <div class="form-group-inner">
+                                    <label for="cmessage">Additional Information</label>
+                                    <textarea class="form-control" id="note" name="note" placeholder="eg. name of guests"></textarea>
+                                </div>
+                            </div>
+                            
+                             <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-block btn-primary">Submit</button>
+                            </div>   
+                                                                 
+                        </div><!--//row-->
+                    </form><!--//rsvp-form-->
+                    <form id="rsvp-form" class="rsvp-form form spanish" style="display: none;" method="post" action="javascript:handleClick()">     
+                        <div id="form-messages" class="text-center"></div>                  
+                        <div class="row text-left">   
+                            <div class="name-group form-group col-xs-12 col-sm-6">
+                                <div class="form-group-inner">
+                                    <label for="cname">Nombre</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Su nombre completo" minlength="2">
+                                </div>
+                            </div>                    
+                            <div class="email-group form-group col-xs-12 col-sm-6">
+                                <div class="form-group-inner">
+                                    <label  for="cemail">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Su correo electronico">
+                                </div>
+                            </div>
+                            
+                            <div class="events-group form-group col-xs-12 col-sm-6">
+                                <div class="form-group-inner">
+                                    <label for="cevents">Vendra?</label>
+                                    <select class="form-control" id="events" name="events">                       
+                                        <option value="" selected="">Selecta</option> 
+                                        <option value="Yes">Si, estara aqui</option>
+                                        <option value="No">Lo siento, no puedo venir</option>
+                                    </select>          
+                                </div>       
+                            </div>      
+                            
+                            <div class="guests-group form-group col-xs-12 col-sm-6">
+                                <div class="form-group-inner">
+                                    <label for="cguests">Cuantos invitados vendran con usted?</label>
+                                    <select class="form-control" id="guest_ct" name="guest_ct">
+                                        <option value="" selected="">Selecta</option>
+                                        <option value="0">No Invitado</option>
+                                        <option value="1">1 invitado</option>
+                                        <option value="2">2 invitados</option>
+                                        <option value="3">3 invitados</option>
+                                        <option value="4">4 invitados</option>
+                                        <option value="5">5 invitados</option>
+                                        <option value="6">6 invitados</option>
+                                        <option value="7">7 invitados</option>
+                                        <option value="8">8 invitados</option>
+                                        <option value="9">9 invitados</option>
+                                        <option value="10">10 invitados</option>
+                                    </select>   
+                                </div>    
+                            </div>                                                
+                            <div class="message-group form-group col-xs-12">
+                                <div class="form-group-inner">
+                                    <label for="cmessage">Mas Informationes</label>
+                                    <textarea class="form-control" id="note" name="note" placeholder="Por ejemplo, el nombre de los invitados que vienen con usted."></textarea>
+                                </div>
+                            </div>
+                            
+                             <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-block btn-primary">Submeta</button>
+                            </div>   
+                                                                 
+                        </div><!--//row-->
+                    </form><!--//rsvp-form-->
+                    <form id="rsvp-form" class="rsvp-form form french" style="display: none;" method="post" action="javascript:handleClick()">     
+                        <div id="form-messages" class="text-center"></div>                  
+                        <div class="row text-left">   
+                            <div class="name-group form-group col-xs-12 col-sm-6">
+                                <div class="form-group-inner">
+                                    <label for="cname">Nom</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom complet" minlength="2">
+                                </div>
+                            </div>                    
+                            <div class="email-group form-group col-xs-12 col-sm-6">
+                                <div class="form-group-inner">
+                                    <label  for="cemail">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Votre adresse email">
+                                </div>
+                            </div>
+                            
+                            <div class="events-group form-group col-xs-12 col-sm-6">
+                                <div class="form-group-inner">
+                                    <label for="cevents">Viendrez-vous ?</label>
+                                    <select class="form-control" id="events" name="events">                       
+                                        <option value="" selected="">Veuillez selectionner</option> 
+                                        <option value="Yes">Oui, je viendrai</option>
+                                        <option value="No">Desole, je ne peux pas venir</option>
+                                    </select>          
+                                </div>       
+                            </div>      
+                            
+                            <div class="guests-group form-group col-xs-12 col-sm-6">
+                                <div class="form-group-inner">
+                                    <label for="cguests">Combien d'invites viendront avec vous ?</label>
+                                    <select class="form-control" id="guest_ct" name="guest_ct">
+                                        <option value="" selected="">Veuillez selectionner</option>
+                                        <option value="0">Pas d'invite</option>
+                                        <option value="1">1 invite</option>
+                                        <option value="2">2 invites</option>
+                                        <option value="3">3 invites</option>
+                                        <option value="4">4 invites</option>
+                                        <option value="5">5 invites</option>
+                                        <option value="6">6 invites</option>
+                                        <option value="7">7 invites</option>
+                                        <option value="8">8 invites</option>
+                                        <option value="9">9 invites</option>
+                                        <option value="10">10 invites</option>
+                                    </select>   
+                                </div>    
+                            </div>                                                
+                            <div class="message-group form-group col-xs-12">
+                                <div class="form-group-inner">
+                                    <label for="cmessage">Plus d'information</label>
+                                    <textarea class="form-control" id="note" name="note" placeholder="ex: le nom des invites qui viendront avec cous"></textarea>
+                                </div>
+                            </div>
+                            
+                             <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-block btn-primary">Soumettre</button>
+                            </div>   
+                                                                 
+                        </div><!--//row-->
+                    </form><!--//rsvp-form-->
+                </div><!--//modal-body-->
+                <div class="alert alert-danger" id="fail-rsvp-form-alert" style="display: none;">
+                  <button type="button" class="close" data-dismiss="alert">x</button>
+                  <ul id="fail-rsvp-form-alert-message">
+                  </ul>        
+                </div>
+            </div><!--//modal-content-->
+            
+        </div><!--//modal-dialog-->
+    </div>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $('input[type="radio"]').click(function(){
+    if($(this).attr("value")=="attend"){
+        $("#guest_ct_group").show();
+    }
+    if($(this).attr("value")=="not_attend"){
+        $("#guest_ct_group").hide();
+    }
+  });
+
+  selectedLanguage = 'english'
+  
+  if ((selectedLanguage == 'english') || (selectedLanguage == 'spanish') || (selectedLanguage == 'french')) {
+    $("#selectlanguage").val(selectedLanguage);
+
+    if (selectedLanguage == 'english') {
+        $('.english').show();
+        $('.spanish').hide();
+        $('.french').hide();
+    }else if (selectedLanguage =='spanish') {
+      $('.spanish').show();
+      $('.english').hide();
+      $('.french').hide();
+    }else if (selectedLanguage =='french') {
+      $('.spanish').hide();
+      $('.english').hide();
+      $('.french').show();
+    }
+  }
+
+
+  $("#selectlanguage").bind('change', function() {
+    //on change set cookie and...
+    //setCookie('language', this.value, 365);
+    
+    //change css depending on what is selected
+        var sel = $("#selectlanguage").val();
+        if (sel == 'english') {
+            $('.english').show();
+            $('.spanish').hide();
+            $('.french').hide();
+        }else if (sel =='spanish') {
+          $('.spanish').show();
+          $('.english').hide();
+          $('.french').hide();
+        }else if (sel =='french') {
+          $('.spanish').hide();
+          $('.english').hide();
+          $('.french').show();
+        }
+  })
+      
+  init_map()
+
+
+})
+</script>
+
+<script>
+  var newYear = new Date(); 
+  newYear = $.countdown.UTCDate(0, 2017, 8 - 1, 5, 21, 30, 0, 0) /* August 2017, 5, 2.30pm PST = 9.30pm UTC*/
+  $("#countdown").countdown({until: newYear});
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6-A6R4wcvGurSitQi7FZrXTDmvzFHoas"
+  type="text/javascript"></script>
+
+<script>  //modal-content
+    function init_map() {
+        var var_location_house = new google.maps.LatLng(39.2479664,-119.9980425);
+        var var_location_hotel = new google.maps.LatLng(39.2280508,-120.0068954);
+ 
+        var var_mapoptions = {
+          center: var_location_house,
+          zoom: 13
+        };
+ 
+      var var_map = new google.maps.Map(document.getElementById("map-container"),
+            var_mapoptions);
+
+      var var_marker_house = new google.maps.Marker({
+        position: var_location_house,
+        map: var_map,
+        title:"var_marker_house"});
+
+      var var_marker_hotel = new google.maps.Marker({
+        position: var_location_hotel,
+        map: var_map,
+        title:"Hotel"});
+  
+        var contentString_house = '<div class="note english">Ceremony</div>' +
+                '<div class="note spanish" style="display: none;">Matrimonio</div>' +
+                '<div class="note french" style="display: none;">Ceremonie</div>' +
+                '<h4 class="map-title script english">House</h4>' +
+                '<h4 class="map-title script spanish" style="display: none;">Casa</h4>' +
+                '<h4 class="map-title script french" style="display: none;">Maison</h4>' +
+                '<div class="address">' +
+                '<span class="region">453 Lakeshore Blvd</span>' +
+                '<br>' +
+                '<span class="postal-code">Incline Village NV 89451</span>' +
+                '<br>' +
+                '<span class="city-name"></span>'
+
+        var contentString_hotel = '<div id="hook" class="note english">Parking and after party</div>' +
+                '<div id="hook" class="note spanish" style="display: none;">Estacionamiento y Depues-Fiesta</div>' +
+                '<div id="hook" class="note french" style="display: none;">Parking et soiree</div>' +
+                '<h4 class="map-title script">Hotel</h4>' +
+                '<div class="address">' +
+                '<span class="region">Tahoe Biltmore Lodge & Casino</span>' +
+                '<br>' +
+                '<span class="postal-code">5 NV-28</span>' +
+                '<br>' +
+                '<span class="city-name">Crystal Bay, NV 89402</span>' +
+                '</div>'
+
+        var infowindow_house = new google.maps.InfoWindow({
+            content: contentString_house,
+            maxWidth: 400
+        });
+
+        var infowindow_hotel = new google.maps.InfoWindow({
+            content: contentString_hotel,
+            maxWidth: 400,
+            pixelOffset: new google.maps.Size(-130, 50)
+        });
+
+        var_marker_house.addListener('click', function () {
+            infowindow_house.open(var_map, var_marker_house);
+        });
+
+        var_marker_hotel.addListener('click', function () {
+            infowindow_hotel.open(var_map, var_marker_hotel);
+        });
+
+      var_marker_house.setMap(var_map); 
+      var_marker_hotel.setMap(var_map); 
+      infowindow_hotel.open(var_map, var_marker_hotel);
+      infowindow_house.open(var_map, var_marker_house);
+
+      google.maps.event.addListenerOnce(var_map, 'idle', function(){
+        $("#selectlanguage").change()
+      });
+ 
+    }
+ 
+</script>
+<script>
+  // Disable scroll zooming and bind back the click event
+  var onMapMouseleaveHandler = function (event) {
+    var that = $(this);
+
+    that.on('click', onMapClickHandler);
+    that.off('mouseleave', onMapMouseleaveHandler);
+    that.find('.gm-style').css("pointer-events", "none");
+  }
+
+  var onMapClickHandler = function (event) {
+    var that = $(this);
+
+    // Disable the click handler until the user leaves the map area
+    that.off('click', onMapClickHandler);
+
+    // Enable scrolling zoom
+    that.find('.gm-style').css("pointer-events", "auto");
+
+    // Handle the mouse leave event
+    that.on('mouseleave', onMapMouseleaveHandler);
+  }
+
+  // Enable map zooming with mouse scroll when the user clicks the map
+  $('#map-container').on('click', onMapClickHandler);
+</script>
+<script>
+$(document).on('click','#myPage',function(e) {
+    if( ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') || $(e.target).attr('id') != 'navbar-collapse') {
+        $('.navbar-collapse').collapse('hide');
+    }
+});
+
+</script>
+<script>
+
+  var validateEmail = function (email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
+  function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+   }
+
+  var handleClick = function(event) {
+
+    $("#fail-rsvp-form-alert").hide();
+
+      $(".name-group.form-group").removeClass("has-error");
+      $(".email-group.form-group").removeClass("has-error");
+      $(".guests-group.form-group").removeClass("has-error");
+      $(".events-group.form-group").removeClass("has-error");
+
+
+    name = escapeHtml($("#rsvp-form #name").not(":hidden").val())
+    email = escapeHtml($("#rsvp-form #email").not(":hidden").val())
+    note = escapeHtml($("#rsvp-form #note").not(":hidden").val())
+    events = escapeHtml($("#rsvp-form #events").not(":hidden").val())
+    guest_ct = escapeHtml($("#rsvp-form #guest_ct").not(":hidden").val())
+
+    error = false
+    error_text = ""
+
+    if (name == null | name.trim() == "" | name.trim().length < 3) {
+      error = true
+      $(".name-group.form-group").addClass("has-error");
+      error_text += "<li>Name should be at least 4 characters</li>"
+    }
+
+    if (email != null & email.trim().length > 0) {
+      if (!validateEmail(email)) {
+        error = true
+        $(".email-group.form-group").addClass("has-error");
+        error_text += "<li>Please enter a valid email</li>"
+      }
+    }
+
+    if (events != null & events == "Yes" & (guest_ct == null | guest_ct == "")) {
+      error = true
+      $(".guests-group.form-group").addClass("has-error");
+      error_text += "<li>Let us know how many guets are coming!</li>"
+    }
+    if (events == null | events == "") {
+      error = true
+      $(".events-group.form-group").addClass("has-error");
+      error_text += "<li>Let us know if you can attend</li>"
+    }
+
+    if (error) {
+      $("#fail-rsvp-form-alert").show();
+      $("#fail-rsvp-form-alert-message").html(error_text)
+    }
+
+    if(!error) {
+
+      $(".name-group.form-group").removeClass("has-error");
+      $(".email-group.form-group").removeClass("has-error");
+      $(".guests-group.form-group").removeClass("has-error");
+      $(".events-group.form-group").removeClass("has-error");
+
+
+      postData = {"name":name,
+                  "email":email,
+                  "events":events,
+                  "note": note,
+                  "guest_ct":guest_ct}
+
+      $.ajax({
+              type: "POST",
+              url: "register",
+              data: postData,
+              dataType: "json",
+              success: function(msg){
+                  if (msg.status == "success") {
+                    $('#rsvp-modal').modal('hide')
+                    $("#success-alert").fadeTo(6000, 500).slideUp(500, function(){
+                        $("#success-alert").slideUp(500);
+                    });
+                  } else {
+                    $('#rsvp-modal').modal('hide')
+                    $("#fail-alert").fadeTo(6000, 500).slideUp(500, function(){
+                        $("#fail-alert").slideUp(500);
+                    });
+                  }
+              },
+              error: function(msg){
+                $('#rsvp-modal').modal('hide')
+                $("#fail-alert").fadeTo(6000, 500).slideUp(500, function(){
+                        $("#fail-alert").slideUp(500);
+                    });
+              }
+          });
+    }
+
+  }
+</script>
+
+</body>
+</html>
+
