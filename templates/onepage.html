@@ -323,7 +323,6 @@
   }
 
   #registry {
-    padding-top: 90px;
     padding-bottom: 90px;
   }
 
@@ -360,11 +359,11 @@
     margin-bottom: 60px;
   }
 
-  #wedding .cols-wrapper {
+  .col-sections .cols-wrapper {
     margin-bottom: 45px;
   }
 
-  #wedding .col-inner {
+  .col-sections .col-inner {
     padding: 60px 30px;
     background: #f5f5f5;
     -webkit-border-radius: 10px;
@@ -377,14 +376,14 @@
     background-clip: padding-box;
   }
 
-  #wedding .subtitle {
+  .col-sections .subtitle {
     font-size: 28px;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 30px
   }
 
-  #wedding .intro {
+  .col-sections .intro {
     margin-bottom: 30px;
     color: #786b67;
   }
@@ -393,16 +392,16 @@
     line-height: 1.5;
   }
 
-  #wedding .meta-list {
+  .col-sections .meta-list {
     font-size: 16px;
     display: inline-block;
   }
 
-  #wedding .meta-list li {
+  .col-sections .meta-list li {
     margin-bottom: 15px
   }
 
-  #wedding .glyphicon {
+  .col-sections .glyphicon {
     font-size: 32px;
     width: 55px;
     display: inline-block;
@@ -410,7 +409,7 @@
     vertical-align: middle;
   }
 
-  #wedding .love-icon {
+  .col-sections .love-icon {
     font-size: 32px;
     width: 55px;
     display: inline-block;
@@ -422,13 +421,13 @@ a {
   color: #f4af9c;
 }
 
-#wedding .meta-list .list-link {
+.col-sections .meta-list .list-link {
   padding-left: 55px;
   font-size: 16px;
   margin-bottom: 5px;
 }
 
-#wedding .action-wrapper {
+.col-sections .action-wrapper {
   margin-bottom: 90px;
 }
 #contact {
@@ -557,6 +556,19 @@ a.btn-primary, .btn-primary {
   .language { position: absolute; top: -5px; right: 5px; padding: 20px; }
 }
 
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
 </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -595,20 +607,51 @@ a.btn-primary, .btn-primary {
                 <div id="navbar-collapse" class="navbar-collapse collapse  text-center">
                     <ul class="nav navbar-nav center-block">
                         <li class="nav-item english"><a class="scrollto" href="#wedding">The Wedding</a></li>   
-                        <li class="nav-item spanish" style="display: none;"><a class="scrollto" href="#wedding">El Matrimonio</a></li>      
-                        <li class="nav-item french" style="display: none;"><a class="scrollto" href="#wedding">Le Mariage</a></li>                                            
-                        <li class="nav-item english"><a class="scrollto" href="#registry">Registries</a></li>
-                        <li class="nav-item spanish" style="display: none;"><a class="scrollto" href="#registry">Regalos</a></li>
-                        <li class="nav-item french" style="display: none;"><a class="scrollto" href="#registry">Liste</a></li>
+                        <li class="nav-item spanish" style="display: none;"><a class="scrollto" href="#wedding">La boda</a></li>      
+                        <li class="nav-item french" style="display: none;"><a class="scrollto" href="#wedding">Le mariage</a></li>
+                        <li class="nav-item dropdown english">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="scrollto" href="#accommodation">Accommodation</a></li>
+                            <li><a class="scrollto" href="#transportation">Transportation</a></li>
+                            <li><a class="scrollto" href="#aboutlaketahoe">What to do</a></li>
+                            <li><a class="scrollto" href="#contact">Contact</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown spanish" style="display: none;">
+                          <a class="dropdown-toggle spanish" data-toggle="dropdown" href="#" style="display: none;">Informaci&oacute;n
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="scrollto" href="#accommodation">Alojamiento</a></li>
+                            <li><a class="scrollto" href="#transportation">Transporte</a></li>
+                            <li><a class="scrollto" href="#aboutlaketahoe">Actividades</a></li>
+                            <li><a class="scrollto" href="#contact">Contacto</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown french" style="display: none;">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Informations
+                            <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="scrollto" href="#accommodation">H&eacute;bergement</a></li>
+                            <li><a class="scrollto" href="#transportation">Transport</a></li>
+                            <li><a class="scrollto" href="#aboutlaketahoe">Activit&eacute;s</a></li>
+                            <li><a class="scrollto" href="#contact">Contact</a></li>
+                          </ul>
+                        </li>
                         <li class="nav-item english" ><a class="scrollto" href="#gallery">Gallery</a></li>
                         <li class="nav-item spanish" style="display: none;"><a class="scrollto" href="#gallery">Fotos</a></li>
                         <li class="nav-item french" style="display: none;"><a class="scrollto" href="#gallery">Photos</a></li>
-                        <li class="nav-item english"><a class="scrollto" href="#contact">Contact</a></li>
-                        <li class="nav-item spanish" style="display: none;"><a class="scrollto" href="#contact">Contacto</a></li>
-                        <li class="nav-item french" style="display: none;"><a class="scrollto" href="#contact">Contact</a></li>
                         <li class="nav-item english"><a href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP</a></li>
                         <li class="nav-item spanish" style="display: none;"><a href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP</a></li>
-                        <li class="nav-item french" style="display: none;"><a href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP</a></li>
+                        <li class="nav-item french" style="display: none;"><a href="#" data-toggle="modal" data-target="#rsvp-modal">RSVP</a></li>                        
+                        <li class="nav-item english"><a class="scrollto" href="#registry">Registries</a></li>
+                        <li class="nav-item spanish" style="display: none;"><a class="scrollto" href="#registry">Regalos</a></li>
+                        <li class="nav-item french" style="display: none;"><a class="scrollto" href="#registry">Liste de mariage</a></li>
+
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
             </nav><!--//main-nav-->
@@ -617,7 +660,7 @@ a.btn-primary, .btn-primary {
           <select id="selectlanguage">
               <option id="english" value="english">English</option>
               <option id="spanish" value="spanish">Espanol</option>
-              <option id="french" value="french">Francais</option>
+              <option id="french" value="french">Fran&ccedil;ais</option>
           </select>
           </div>
     </header>
@@ -635,7 +678,7 @@ a.btn-primary, .btn-primary {
                     <div class="date">
                       <span class="date-text english">August 5, 2017</span>
                       <span class="date-text spanish" style="display: none;">Agosto 5, 2017</span>
-                      <span class="date-text french" style="display: none;">5 Aout 2017</span>
+                      <span class="date-text french" style="display: none;">5 Ao&ucirc;t 2017</span>
                       <br>
                       <span class="date-text english">Lake Tahoe</span>
                       <span class="date-text spanish" style="display: none;">Lago Tahoe</span>
@@ -662,7 +705,7 @@ a.btn-primary, .btn-primary {
                     <div class="date">
                       <span class="date-text english">August 5, 2017</span>
                       <span class="date-text spanish" style="display: none;">Agosto 5, 2017</span>
-                      <span class="date-text french" style="display: none;">5 Aout 2017</span>
+                      <span class="date-text french" style="display: none;">5 Ao&ucirc;t 2017</span>
                       <br>
                       <span class="date-text english">Lake Tahoe</span>
                       <span class="date-text spanish" style="display: none;">Lago Tahoe</span>
@@ -688,7 +731,7 @@ a.btn-primary, .btn-primary {
                     <div class="date">
                       <span class="date-text english">August 5, 2017</span>
                       <span class="date-text spanish" style="display: none;">Agosto 5, 2017</span>
-                      <span class="date-text french" style="display: none;">5 aout 2017</span>
+                      <span class="date-text french" style="display: none;">5 ao&ucirc;t 2017</span>
                       <br>
                       <span class="date-text english">Lake Tahoe</span>
                       <span class="date-text spanish" style="display: none;">Lago Tahoe</span>
@@ -714,7 +757,7 @@ a.btn-primary, .btn-primary {
     </div>
 </div>
 
-<div id="wedding" class="container text-center">
+<div id="wedding" class="container text-center col-sections">
   <h3>
     <span class="title-deco-left"></span>
     <span class="title-text english">The Wedding</span>
@@ -727,66 +770,54 @@ a.btn-primary, .btn-primary {
   <div class="row cols-wrapper">
     <div class="ceremony-col col-xs-12 col-sm-6">
         <div class="col-inner">
-            <h4 class="subtitle english">Ceremony</h4>
-            <h4 class="subtitle spanish" style="display: none;">Fiesta</h4>
-            <h4 class="subtitle french" style="display: none;">Ceremonie</h4>
-            <p class="intro english">We are getting married in a private house by the lake. After the ceremony, there will be food, drinks and surprises during the cocktail and dinner.</p>
+            <h4 class="subtitle english">Wedding</h4>
+            <h4 class="subtitle spanish" style="display: none;">La Boda</h4>
+            <h4 class="subtitle french" style="display: none;">Le Mariage</h4>
+            <p class="intro english">We are getting married in a private house by the lake (take your swimsuit!) . The ceremony will be followed by a cocktail, a dinner and some dancing.
             <p class="intro spanish" style="display: none;">Nos casamos en una casa cerca del lago. Depues del matrimonia, haria comida, bebidas y sorpresas durante la cena.</p>
             <p class="intro french" style="display: none;">Nous nous marions dans une maison au bord du lac. Il y aura de la nourriture, des boissons et des surprises pendant le cocktail et le diner</p>
             <ul class="meta-list list-unstyled text-left center-block">
                 <li class="english"><span class="glyphicon glyphicon-calendar"></span>Saturday - Aug 5th, 2017</li>
                 <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-calendar"></span>Sabado - Aug 5, 2017</li>
-                <li class="french" style="display: none;"><span class="glyphicon glyphicon-calendar"></span>Samedi - 5 aout 2017</li>
+                <li class="french" style="display: none;"><span class="glyphicon glyphicon-calendar"></span>Samedi - 5 ao&ucirc;t 2017</li>
                 <li class="english"><span class="glyphicon glyphicon-time"></span>2.30pm</li>
                 <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-time"></span>14h30</li>
                 <li class="french" style="display: none;"><span class="glyphicon glyphicon-time"></span>14h30</li>
                 <li class="english"><span class="glyphicon glyphicon-map-marker"></span>House
-                    <br>
-                    <span class="direction-info display-block list-link"><a href="#" data-toggle="modal" data-target="#direction-modal">How to get there</a></span>
-                    <span class="facilities-info display-block list-link"><a href="#" data-toggle="modal" data-target="#facilities-modal">Facilities</a></span>
                 </li>
                 <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-map-marker spanish"></span>Casa
-                    <br>
-                    <span class="direction-info display-block list-link"><a href="#" data-toggle="modal" data-target="#direction-modal">Como ir</a></span>
-                    <span class="facilities-info display-block list-link"><a href="#" data-toggle="modal" data-target="#facilities-modal">Instalaciones</a></span>
                 </li>
                 <li class="french" style="display: none;"><span class="glyphicon glyphicon-map-marker french"></span>Maison
-                    <br>
-                    <span class="direction-info display-block list-link"><a href="#" data-toggle="modal" data-target="#direction-modal">Comment y aller</a></span>
-                    <span class="facilities-info display-block list-link"><a href="#" data-toggle="modal" data-target="#facilities-modal">Installations</a></span>
                 </li>
             </ul>
         </div>
     </div>
     <div class="reception-col col-xs-12 col-sm-6">
         <div class="col-inner">
-            <h4 class="subtitle english">Parking and After-Party</h4>
-            <h4 class="subtitle spanish" style="display: none;">Estacionamiento y Depues-Fiesta</h4>
-            <h4 class="subtitle french" style="display: none;">Parking et Soiree</h4>
-            <p class="intro english">The after party will take place at the Biltmore Hotel, 2 miles from the house. Shuttles will bring the guests from the hotel to the house and back.</p>
-            <p class="intro spanish" style="display: none;">La Depues-Fiesta estara en el hotel Biltmore, 2 millos de la casa. Carros traeran los invitados del hotel hasta la casa y back,</p>
-            <p class="intro french" style="display: none;">La soiree aura lieu a l'hotel Biltmore, a 2 km de la maison. Des navettes ameneront des invites de l'hotel a la maison et back.</p>
+            <h4 class="subtitle english">After-Party</h4>
+            <h4 class="subtitle spanish" style="display: none;">La Fiesta</h4>
+            <h4 class="subtitle french" style="display: none;">La Soir&eacute;e</h4>
+            <p class="intro english">The after party will take place at Rookies, in Incline Village, 2.5 miles away from the house. Rookies is an sports bar that organizes big parties with live DJ on Saturday nights.
+              <br>
+              <b>Shuttles will bring the guests from the house to Rookies</b>
+            </p>
+            <p class="intro spanish" style="display: none;">La fiesta estara en Rookies, 2 millos de la casa. Carros traeran los invitados del hotel hasta la casa y back,</p>
+            <p class="intro french" style="display: none;">La soir&eacute;e aura lieu &agrave; Rookies, &agrave; 2 km de la maison. 
+              <br>
+              <b>Des navettes am&egrave;neront les invit&eacute;s du mariage &agrave; la soir&eacute;e.</b>
+            </p>
             <ul class="meta-list list-unstyled text-left center-block">
                 <li class="english"><span class="glyphicon glyphicon-calendar"></span>Saturday - Aug 5th, 2017</li>
                 <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-calendar"></span>Sabado - Aug 5, 2017</li>
-                <li class="french" style="display: none;"><span class="glyphicon glyphicon-calendar"></span>Samedi - 5 aout 2017</li>
-                <li class="english"><span class="glyphicon glyphicon-time"></span>9.30pm</li>
-                <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-time"></span>21h30</li>
-                <li class="french" style="display: none;"><span class="glyphicon glyphicon-time"></span>21h30</li>
-                <li class="english"><span class="glyphicon glyphicon-map-marker"></span>Biltmore Hotel and Casino
-                    <br>
-                    <span class="direction-info display-block list-link"><a href="#" data-toggle="modal" data-target="#direction-modal">How to get there</a></span>
-                    <span class="facilities-info display-block list-link"><a href="#" data-toggle="modal" data-target="#facilities-modal">Facilities</a></span>
+                <li class="french" style="display: none;"><span class="glyphicon glyphicon-calendar"></span>Samedi - 5 ao&ucirc;t 2017</li>
+                <li class="english"><span class="glyphicon glyphicon-time"></span>10pm</li>
+                <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-time"></span>22h</li>
+                <li class="french" style="display: none;"><span class="glyphicon glyphicon-time"></span>22h</li>
+                <li class="english"><span class="glyphicon glyphicon-map-marker"></span>Rookie’s Sports Bar and Grill
                 </li>
-                <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-map-marker spanish"></span>Biltmore Hotel y Casino
-                    <br>
-                    <span class="direction-info display-block list-link"><a href="#" data-toggle="modal" data-target="#direction-modal">Como ir</a></span>
-                    <span class="facilities-info display-block list-link"><a href="#" data-toggle="modal" data-target="#facilities-modal">Instalaciones</a></span>
+                <li class="spanish" style="display: none;"><span class="glyphicon glyphicon-map-marker spanish"></span>Rookie’s Sports Bar and Grill
                 </li>
-                <li class="french" style="display: none;"><span class="glyphicon glyphicon-map-marker french"></span>Biltmore Hotel et Casino
-                    <br>
-                    <span class="direction-info display-block list-link"><a href="#" data-toggle="modal" data-target="#direction-modal">Comment y aller</a></span>
-                    <span class="facilities-info display-block list-link"><a href="#" data-toggle="modal" data-target="#facilities-modal">Installations</a></span>
+                <li class="french" style="display: none;"><span class="glyphicon glyphicon-map-marker french"></span>Rookie’s Sports Bar and Grill
                 </li>
             </ul>
         </div>
@@ -802,20 +833,160 @@ a.btn-primary, .btn-primary {
 
 <div id="map-container"></div>
 
+
+<div id="accommodation" class="container text-center col-sections">
+  <h3>
+    <span class="title-deco-left"></span>
+    <span class="title-text english">Accommodation</span>
+    <span class="title-text spanish" style="display: none;">Alojamiento</span>
+    <span class="title-text french" style="display: none;">H&eacute;bergement</span>
+    <span class="title-deco-right"></span>
+  </h3>
+  <br>
+  <h4 class="subtitle">Incline Village</h4>
+  <p class="text-left english">The venue and the after party are in Incline Village, which makes it the most convenient location to stay. We'll have shuttles to and from Incline Village.<p>
+  <p class="text-left english">Incline Village has many types of accommodations to fit your budget and group size:</p>
+  <p class="text-left spanish" style="display: none;">La boda y la fiesta estan en Incline Village. Por eso, es el lugar mas practico para dormir. Ademas, organizamos un systemo de navetas desde Incline Village <p>
+  <p class="text-left spanish" style="display: none;">Incline Village ofrece tipos de alojamiento para diferentes budgetos y taillas de grupos:</p>
+  <p class="text-left french" style="display: none;">Le mariage et la soir&eacute;e sont &agrave; Incline Village. C'est donc l'endroit le plus pratique pour se loger. Nous organiserons &eacute;galement un syst&egrave;me de navettes &agrave; partir d'Incline Village.<p>
+  <p class="text-left french" style="display: none;">Incline Village offre plusieurs types de logement qui conviennent &agrave; diff&eacute;rent budgets et tailles de groupes:</p>
+  <br>
+  <div class="row cols-wrapper">
+      <div class="ceremony-col col-xs-12 col-sm-6">
+          <div class="col-inner">
+              <h4 class="subtitle english">Hotels</h4>
+              <h4 class="subtitle spanish" style="display: none;">Hotels</h4>
+              <h4 class="subtitle french" style="display: none;">H&ocirc;tels</h4>
+              <ul class="meta-list list-unstyled text-left center-block">
+                  <li><span class="glyphicon glyphicon-map-marker"></span>
+                    <a href="http://www.innatincline.com/" target="_blank">Parkside Inn At Incline</a>
+                    <p class="english">Booking options not available yet from their website but other websites like Kayak have rooms.</p>
+                    <p class="spanish" style="display: none;">No se puede reservar en su sitio internet pero Kayak ya tiene cuertos.</p>
+                    <p class="french" style="display: none;">La r&eacute;servation n'est pas encore ouverte &agrave; partir de leur site internet mais d'autres sites comme Kayak ont d&eacute;j&agrave; des chambres.</p>
+                  </li>
+                  <li><span class="glyphicon glyphicon-map-marker"></span>
+                    <a href="https://laketahoe.regency.hyatt.com/en/hotel/home.html" target="_blank">Hyatt Regency Lake Tahoe Resort, Spa and Casino</a>
+                    <p class="english">Already fully booked from the Hyatt's website. Booking.com still had some availability last time we checked.</p>
+                    <p class="spanish" style="display: none;">Ya lleno en su sitio internet pero booking.com tenia cuartos la ultima vez que checkaramos.</p>
+                    <p class="french" style="display: none;">D&eacute;j&agrave; complet sur le site du Hyatt mais booking.com avait encore des chambres la derni&egrave;re fois que nous avons regard&eacute;.</p>
+                  </li>
+                  <br>
+                  <li>
+                    <span class="english">For other options make sure to check your favorite booking websites (
+                      <a href="https://www.kayak.com/hotels/Incline-Village,NV-c34762/2017-08-04/2017-08-06/2guests" target="_blank">kayak</a>, 
+                      <a href="http://www.booking.com/searchresults.html?aid=355028;sid=4f4a49dd800bb8db69f26a7b4326db29;checkin_month=8&checkin_monthday=4&checkin_year=2017&checkout_month=8&checkout_monthday=6&checkout_year=2017&class_interval=1&dest_id=20079071&dest_type=city&dtdisc=0&group_adults=2&group_children=0&highlighted_hotels=522673&hlrd=0&hyb_red=0&inac=0&is_flexible_with_dates=1&label_click=undef&nha_red=0&no_rooms=1&offset=0&postcard=0&redirected_from_city=0&redirected_from_landmark=0&redirected_from_region=0&review_score_group=empty&room1=A%2CA&sb_price_type=total&score_min=0&search_selected=1&src=index&src_elem=sb&ss=Hyatt%20Regency%20Lake%20Tahoe%20Resort%2C%20Spa%20%26%20Casino%2C%20Incline%20Village%2C%20Nevada%2C%20USA&ss_all=0&ss_raw=hyatt%20inclin&ssb=empty&sshis=0&" target="_blank">booking.com</a>
+                      etc.)</span>
+                    <span class="spanish" style="display: none;">Para otras opciones, mira sus sitios favoritos (
+                      <a href="https://www.kayak.com/hotels/Incline-Village,NV-c34762/2017-08-04/2017-08-06/2guests" target="_blank">kayak</a>, 
+                      <a href="http://www.booking.com/searchresults.html?aid=355028;sid=4f4a49dd800bb8db69f26a7b4326db29;checkin_month=8&checkin_monthday=4&checkin_year=2017&checkout_month=8&checkout_monthday=6&checkout_year=2017&class_interval=1&dest_id=20079071&dest_type=city&dtdisc=0&group_adults=2&group_children=0&highlighted_hotels=522673&hlrd=0&hyb_red=0&inac=0&is_flexible_with_dates=1&label_click=undef&nha_red=0&no_rooms=1&offset=0&postcard=0&redirected_from_city=0&redirected_from_landmark=0&redirected_from_region=0&review_score_group=empty&room1=A%2CA&sb_price_type=total&score_min=0&search_selected=1&src=index&src_elem=sb&ss=Hyatt%20Regency%20Lake%20Tahoe%20Resort%2C%20Spa%20%26%20Casino%2C%20Incline%20Village%2C%20Nevada%2C%20USA&ss_all=0&ss_raw=hyatt%20inclin&ssb=empty&sshis=0&" target="_blank">booking.com</a>
+                      etc.)</span>
+                    <span class="french" style="display: none;">Pour d'autres options, regardez vos sites pr&eacute;f&eacute;r&eacute;s (
+                      <a href="https://www.kayak.com/hotels/Incline-Village,NV-c34762/2017-08-04/2017-08-06/2guests" target="_blank">kayak</a>, 
+                      <a href="http://www.booking.com/searchresults.html?aid=355028;sid=4f4a49dd800bb8db69f26a7b4326db29;checkin_month=8&checkin_monthday=4&checkin_year=2017&checkout_month=8&checkout_monthday=6&checkout_year=2017&class_interval=1&dest_id=20079071&dest_type=city&dtdisc=0&group_adults=2&group_children=0&highlighted_hotels=522673&hlrd=0&hyb_red=0&inac=0&is_flexible_with_dates=1&label_click=undef&nha_red=0&no_rooms=1&offset=0&postcard=0&redirected_from_city=0&redirected_from_landmark=0&redirected_from_region=0&review_score_group=empty&room1=A%2CA&sb_price_type=total&score_min=0&search_selected=1&src=index&src_elem=sb&ss=Hyatt%20Regency%20Lake%20Tahoe%20Resort%2C%20Spa%20%26%20Casino%2C%20Incline%20Village%2C%20Nevada%2C%20USA&ss_all=0&ss_raw=hyatt%20inclin&ssb=empty&sshis=0&" target="_blank">booking.com</a>
+                      etc.)</span>
+                  </li>
+                  <p class="english"><b>Book early! The accommodation options fill up quickly as Lake Tahoe is a popular tourist destination in August.</b></p>
+                  <p class="spanish" style="display: none;"><b>Reserva temprano. Lago Tahoe es muy popular en Agosto.</b></p>
+                  <p class="french" style="display: none;"><b>R&eacute;servez le plus t&ocirc;t possible. Le lac Tahoe est une destination tr&egrave;s touristique au mois d'ao&ucirc;t.</b></p>
+              </ul>
+
+          </div>
+      </div>
+      <div class="reception-col col-xs-12 col-sm-6">
+          <div class="col-inner">
+              <h4 class="subtitle english">Cabins</h4>
+              <h4 class="subtitle spanish" style="display: none;">Cabins</h4>
+              <h4 class="subtitle french" style="display: none;">Chalets</h4>
+              <p class="intro english" style="display: none;">This option can be particularly convenient if you're planning to spend more time in Lake Tahoe.</p>
+              <p class="intro english" style="display: none;">Check out these websites to find cabins:</p>
+              <p class="intro spanish" style="display: none;">Este opcion es muy buena si va a estar en lago Tahoe algunos dias</p>
+              <p class="intro spanish" style="display: none;">Sitios para encontrar apartamientos:</p>
+              <p class="intro french" style="display: none;">Cette option est particuli&egrave;rement int&eacute;ressante si vous passez plusieurs jours &agrave; Tahoe</p>
+              <p class="intro french" style="display: none;">Quelques sites pour trouver des chalets:</p>
+              <ul class="meta-list list-unstyled text-left center-block">
+                  <li><span class="glyphicon glyphicon-map-marker"></span>
+                    <a href="https://www.airbnb.com/s/Incline-Village--NV?guests=2&checkin=08%2F04%2F2017&checkout=08%2F06%2F2017&room_types%5B%5D=Entire%20home%2Fapt&search_by_map=true&sw_lng=-119.96873112380814&sw_lat=39.23846043827979&ne_lng=-119.93817539871048&ne_lat=39.26662799753017&zoom=15&ss_id=y4b95c36&ss_preload=true&source=bb&page=1&s_tag=zIXhcHYl&allow_override%5B%5D=" target="_blank">AirBnB</a>
+                  </li>
+                  <li><span class="glyphicon glyphicon-map-marker"></span>
+                    <a href="https://www.vrbo.com/vacation-rentals/usa/nevada/lake-tahoe-nv/incline-village-nv/incline-village?sleeps=2-plus&from-date=2017-08-04&to-date=2017-08-06" target="_blank">VRBO</a>
+                  </li>
+                  <br>
+                  <p class="english"><b>Book early! The accommodation options fill up quickly as Lake Tahoe is a popular tourist destination in August.</b></p>
+                  <p class="spanish" style="display: none;"><b>Reserva temprano. Lago Tahoe es muy popular en Agosto.</b></p>
+                  <p class="french" style="display: none;"><b>R&eacute;servez le plus t&ocirc;t possible. Le lac Tahoe est une destination tr&egrave;s touristique au mois d'ao&ucirc;t.</b></p>
+              </ul>
+          </div>
+      </div>
+    </div>
+    <br>
+    <h4 class="subtitle english">Other Options</h4>
+    <h4 class="subtitle spanish" style="display: none;">Otras opciones</h4>
+    <h4 class="subtitle french" style="display: none;">Autres options</h4>
+    <p class="text-left english">Kings Beach also has a lot of accommodations. However, it is not as convenient (transportation wise) for the wedding since the after-party is in Incline Village and shuttles will only bring guests from Incline Village.</p>
+    <p class="text-left english">If you decide to stay in Kings Beach, you could drive to Incline Village to take the shuttle or take a taxi (see "Transportation" section).</p>
+    <p class="text-left spanish" style="display: none;">Kings Beach tambien tiene alojamiento. No es tan practico como Incline Village (para el transporte) porque la boda y la fiesta estan en Incline Village. Navetas sola traeran los invitados desde Incline Village</p>
+    <p class="text-left spanish" style="display: none;">Si decide de alojar es Kings Beach, podria manejar a Incline Village para tomar la naveta o utilizar un taxi (mira la seccion "Transporte").</p>
+    <p class="text-left french" style="display: none;">Kings Beach a &eacute;galement beaucoup de logements. Cependant, ce n'est pas aussi pratique qu'Incline Village (vis &agrave; vis du transport) : le mariage et la soiree sont &agrave; Incline Village et les navettes ne pourront amener que les invit&eacute;s se trouvant &agrave; Incline Village.</p>
+    <p class="text-left french" style="display: none;">Si vous restez &agrave; Kings Beach, vous pouvez conduire jusqu'&agrave; Incline Village pour prendre la navette ou commander un taxi (cf. section "Transport").</p>
+    <br>
+    <br>
+</div>
+<br>
+<br>
+
+<div id="transportation" class="container text-center col-sections">
+  <h3>
+    <span class="title-deco-left"></span>
+    <span class="title-text english">Transportation</span>
+    <span class="title-text spanish" style="display: none;">Transporte</span>
+    <span class="title-text french" style="display: none;">Transport</span>
+    <span class="title-deco-right"></span>
+  </h3>
+  <br>
+  <div class="row row-centered cols-wrapper">
+      <div class="ceremony-col col-xs-12 col-sm-6 col-centered">
+          <div class="col-inner">
+              <ul class="meta-list text-left center-block english">
+                <li>There is no parking at venue</li>
+                <li>Shuttle service between Incline Village and venue (we'll provide a map of the pick-up locations later, once we know where the guests are staying)</li>
+                <li>Taxis (limited if ordered at the last minute): Make sure to reserve them ahead of time.</li>
+                <li>Uber (limited)</li>
+                <li>Allow plenty of time for taxis/Uber since there can be heavy traffic in Tahoe at this time of the year.</li>
+              </ul>
+              <ul class="meta-list text-left center-block spanish" style="display: none;">
+                <li>No hay aparcamiento al lugar de la boda</li>
+                <li>Hay navetas entre Incline Village y el lugar de la boda (les dare la lista de las pick-ups)</li>
+                <li>Taxis (limitados al ultimo momento): Reservalos temprano</li>
+                <li>Uber (limitados)</li>
+                <li>Deja usted mucho tiempo asi que hay mucho trafico en Agosto en lago Tahoe</li>
+              </ul>
+              <ul class="meta-list text-left center-block french" style="display: none;">
+                <li>Il n'y a pas de parking sur le lieu du mariage</li>
+                <li>Nous organiserons un syst&egrave;me de navettes entre Incline Village et le lieu du mariage (nous vous donnerons un plan des arr&ecirc;ts de la navette plus tard, lorsque nous saurons o&ugrave; restent tous nos invit&eacute;s)</li>
+                <li>Taxis (limit&eacute;s si vous les appelez &agrave; la derni&egrave;re minute): R&eacute;servez les &agrave; l'avance !</li>
+                <li>Uber (limit&eacute;s)</li>
+                <li>Pr&eacute;voyez du temps car il peut y avoir des bouchons en ao&ucirc;t au lac Tahoe</li>
+              </ul>                            
+          </div>
+      </div>
+    </div>
+</div>
+
+
 <!-- Container (Registry Section) -->
 <div id="registry" class="registry container text-center">
   <h3>
     <span class="title-deco-left"></span>
     <span class="title-text english">Registries</span>
     <span class="title-text spanish" style="display: none;">Regalos</span>
-    <span class="title-text french" style="display: none;">Liste</span>
+    <span class="title-text french" style="display: none;">Liste de mariage</span>
     <span class="title-deco-right"></span>
   </h3>
   <div class="message-container">
     <div class="message-inner center-block">
-      <div class="intro english">We created two gift registries: one in France and one in the US.</div>
-      <div class="intro spanish" style="display: none;">Tenemos dos listas de regalos. Una en Francia y una en los EEUU.</div>
-      <div class="intro french" style="display: none;">Nous avons cree deux listes : une en France et une aux Etats-Unis.</div>
+      <div class="intro english">We created two gift registries, one in France and one in the US, in order to enable transactions in both USD and Euros. Feel free to pick your favorite gift from either list!</div>
+      <div class="intro spanish" style="display: none;">Tenemos dos listas de regalos, una en los EEUU y una en Francia, para permitir las transacciones en Dollares y Euros.</div>
+      <div class="intro french" style="display: none;">Nous avons cr&eacute;&eacute; deux listes, une en France et une aux Etats-Unis afin de permettre les achats en Euros et en Dollars.</div>
       <div class="thank-you script english">Thank you so much! :)</div>
       <div class="thank-you script spanish" style="display: none;">!Muchas gracias! :)</div>
       <div class="thank-you script french" style="display: none;">Merci beaucoup ! :)</div>
@@ -931,7 +1102,7 @@ a.btn-primary, .btn-primary {
       <br><br>
       <p class="english"><span class="glyphicon glyphicon-phone english"></span>Phone: +1 408 858 9849</p>
       <p class="spanish" style="display: none;"><span class="glyphicon glyphicon-phone spanish"></span>Telefono: +1 408 858 9849</p>
-      <p class="french" style="display: none;"><span class="glyphicon glyphicon-phone french"></span>Telephone : +1 408 858 9849</p>
+      <p class="french" style="display: none;"><span class="glyphicon glyphicon-phone french"></span>T&eacute;l&eacute;phone : +1 408 858 9849</p>
       <p><span class="glyphicon glyphicon-envelope"></span>Email: morganelustman@gmail.com</p>
     </div>
     <div class="col-md-4 indiv_address">
@@ -939,7 +1110,7 @@ a.btn-primary, .btn-primary {
       <br><br>
       <p class="english"><span class="glyphicon glyphicon-phone english"></span>Phone: +1 650 391 6001</p>
       <p class="spanish" style="display: none;"><span class="glyphicon glyphicon-phone spanish"></span>Telefono: +1 650 391 6001</p>
-      <p class="french" style="display: none;"><span class="glyphicon glyphicon-phone french"></span>Telephone : +1 650 391 6001</p>
+      <p class="french" style="display: none;"><span class="glyphicon glyphicon-phone french"></span>T&eacute;l&eacute;phone : +1 650 391 6001</p>
       <p><span class="glyphicon glyphicon-envelope"></span>Email: padronas@gmail.com</p>
     </div>
     <div class="col-md-4 indiv_address">
@@ -969,7 +1140,7 @@ a.btn-primary, .btn-primary {
   </a><br><br>
   <p class="english">We hope to see you soon!</p>
   <p class="spanish" style="display: none;">!Esperamos verle pronto!</p>
-  <p class="french" style="display: none;">Nous esperons vous voir bientot !</p>
+  <p class="french" style="display: none;">Nous esp&eacute;rons vous voir bient&ocirc;t !</p>
 </footer>
 
 <!-- RSVP modal -->
@@ -1232,13 +1403,13 @@ $(document).ready(function(){
     }
   }
 
-
   $("#selectlanguage").bind('change', function() {
     //on change set cookie and...
     //setCookie('language', this.value, 365);
     
     //change css depending on what is selected
         var sel = $("#selectlanguage").val();
+
         if (sel == 'english') {
             $('.english').show();
             $('.spanish').hide();
@@ -1256,7 +1427,6 @@ $(document).ready(function(){
       
   init_map()
 
-
 })
 </script>
 
@@ -1272,7 +1442,7 @@ $(document).ready(function(){
 <script>  //modal-content
     function init_map() {
         var var_location_house = new google.maps.LatLng(39.2479664,-119.9980425);
-        var var_location_hotel = new google.maps.LatLng(39.2280508,-120.0068954);
+        var var_location_hotel = new google.maps.LatLng(39.2448078,-119.93685959999999);
  
         var var_mapoptions = {
           center: var_location_house,
@@ -1294,7 +1464,7 @@ $(document).ready(function(){
   
         var contentString_house = '<div class="note english">Ceremony</div>' +
                 '<div class="note spanish" style="display: none;">Matrimonio</div>' +
-                '<div class="note french" style="display: none;">Ceremonie</div>' +
+                '<div class="note french" style="display: none;">C&eacute;r&eacute;monie</div>' +
                 '<h4 class="map-title script english">House</h4>' +
                 '<h4 class="map-title script spanish" style="display: none;">Casa</h4>' +
                 '<h4 class="map-title script french" style="display: none;">Maison</h4>' +
@@ -1302,19 +1472,16 @@ $(document).ready(function(){
                 '<span class="region">453 Lakeshore Blvd</span>' +
                 '<br>' +
                 '<span class="postal-code">Incline Village NV 89451</span>' +
-                '<br>' +
-                '<span class="city-name"></span>'
+                '<br>'
 
-        var contentString_hotel = '<div id="hook" class="note english">Parking and after party</div>' +
-                '<div id="hook" class="note spanish" style="display: none;">Estacionamiento y Depues-Fiesta</div>' +
-                '<div id="hook" class="note french" style="display: none;">Parking et soiree</div>' +
-                '<h4 class="map-title script">Hotel</h4>' +
+        var contentString_hotel = '<div id="hook" class="note english">After party</div>' +
+                '<div id="hook" class="note spanish" style="display: none;">Depues-Fiesta</div>' +
+                '<div id="hook" class="note french" style="display: none;">Soir&eacute;e</div>' +
+                '<h4 class="map-title script">Rookies</h4>' +
                 '<div class="address">' +
-                '<span class="region">Tahoe Biltmore Lodge & Casino</span>' +
+                '<span class="region">930 Tahoe Boulevard #1000</span>' +
                 '<br>' +
-                '<span class="postal-code">5 NV-28</span>' +
-                '<br>' +
-                '<span class="city-name">Crystal Bay, NV 89402</span>' +
+                '<span class="postal-code">Incline Village, NV 89451</span>' +
                 '</div>'
 
         var infowindow_house = new google.maps.InfoWindow({
@@ -1324,8 +1491,8 @@ $(document).ready(function(){
 
         var infowindow_hotel = new google.maps.InfoWindow({
             content: contentString_hotel,
-            maxWidth: 400,
-            pixelOffset: new google.maps.Size(-130, 50)
+            maxWidth: 400
+            //pixelOffset: new google.maps.Size(-130, 50)
         });
 
         var_marker_house.addListener('click', function () {
