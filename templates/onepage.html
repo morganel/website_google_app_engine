@@ -364,7 +364,7 @@
   }
 
   .col-sections .col-inner {
-    padding: 60px 30px;
+    padding: 40px 20px;
     background: #f5f5f5;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -376,7 +376,7 @@
     background-clip: padding-box;
   }
 
-  .col-sections .subtitle {
+  .col-sections .subtitle, #aboutlaketahoe div.subtitle {
     font-size: 28px;
     font-weight: bold;
     margin-top: 0;
@@ -431,7 +431,6 @@ a {
   margin-bottom: 90px;
 }
 #contact {
-  margin-top: 90px;
   margin-bottom: 90px;
 }
 
@@ -512,8 +511,8 @@ a.btn-primary, .btn-primary {
 
 #gallery {
   background: #f5f5f5;
-  padding-top: 90px;
-  padding-bottom :90px;
+  padding-top: 20px;
+  padding-bottom :20px;
 }
 
 #gallery .intro {
@@ -569,6 +568,30 @@ a.btn-primary, .btn-primary {
     margin-right:-4px;
 }
 
+.small-li-group li {
+  margin-bottom: 5px !important; 
+}
+
+div.top-li-header {
+  margin-bottom: 10px; 
+}
+
+.activity-modal .modal-dialog {
+  width: 80%;
+}
+
+@media (max-width: 767px) {
+  .modal .modal-dialog {width: auto;}
+}
+
+.img-responsive.img-center {
+  margin: 0 auto;
+}
+
+#activity-modal h4.col-title{
+  font-size: 24px
+}
+
 </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -616,7 +639,8 @@ a.btn-primary, .btn-primary {
                           <ul class="dropdown-menu">
                             <li><a class="scrollto" href="#accommodation">Accommodation</a></li>
                             <li><a class="scrollto" href="#transportation">Transportation</a></li>
-                            <li><a class="scrollto" href="#aboutlaketahoe">What to do</a></li>
+                            <li><a class="scrollto" href="#travel">Travel</a></li>
+                            <li><a class="scrollto" href="#aboutlaketahoe">Lake Tahoe Area</a></li>
                             <li><a class="scrollto" href="#contact">Contact</a></li>
                           </ul>
                         </li>
@@ -627,7 +651,8 @@ a.btn-primary, .btn-primary {
                           <ul class="dropdown-menu">
                             <li><a class="scrollto" href="#accommodation">Alojamiento</a></li>
                             <li><a class="scrollto" href="#transportation">Transporte</a></li>
-                            <li><a class="scrollto" href="#aboutlaketahoe">Actividades</a></li>
+                            <li><a class="scrollto" href="#travel">Viaje</a></li>
+                            <li><a class="scrollto" href="#aboutlaketahoe">Area del Lago Tahoe</a></li>
                             <li><a class="scrollto" href="#contact">Contacto</a></li>
                           </ul>
                         </li>
@@ -638,7 +663,8 @@ a.btn-primary, .btn-primary {
                           <ul class="dropdown-menu">
                             <li><a class="scrollto" href="#accommodation">H&eacute;bergement</a></li>
                             <li><a class="scrollto" href="#transportation">Transport</a></li>
-                            <li><a class="scrollto" href="#aboutlaketahoe">Activit&eacute;s</a></li>
+                            <li><a class="scrollto" href="#travel">Voyager</a></li>
+                            <li><a class="scrollto" href="#aboutlaketahoe">Autour du Lac Tahoe</a></li>
                             <li><a class="scrollto" href="#contact">Contact</a></li>
                           </ul>
                         </li>
@@ -984,7 +1010,7 @@ a.btn-primary, .btn-primary {
   </h3>
   <br>
   <div class="row row-centered cols-wrapper">
-      <div class="ceremony-col col-xs-12 col-sm-6 col-centered">
+      <div class="ceremony-col col-xs-12 col-sm-10 col-centered">
           <div class="col-inner">
               <ul class="meta-list text-left center-block english">
                 <li>There is no parking at venue</li>
@@ -1122,6 +1148,65 @@ a.btn-primary, .btn-primary {
 
 
 </div><!--//container-->
+
+<div id="travel" class="container text-center col-sections">
+  <h3>
+    <span class="title-deco-left"></span>
+    <span class="title-text english">Travel</span>
+    <span class="title-text spanish" style="display: none;">Viaje</span>
+    <span class="title-text french" style="display: none;">Voyage</span>
+    <span class="title-deco-right"></span>
+  </h3>
+
+  <br>
+  <p class="text-left english">For those joining us from far away, the closest airports are:</p>
+  <br>
+  <div class="row row-centered cols-wrapper">
+      <div class="ceremony-col col-xs-12 col-sm-10 col-centered">
+          <div class="col-inner">
+              <ul class="meta-list text-left center-block english">
+                <li>
+                  <div class="top-li-header">San Francisco Area Airports
+                    <em> - 4 to 5 hour drive to Lake Tahoe</em>
+                  </div>
+                  <ul class="meta-list small-li-group text-left center-block english">
+                    <li>San Francisco International Airport (SFO)</li>
+                    <li>San Jose International Airport (SJC)</li>
+                    <li>Oakland International Airport (OAK)</li>
+                  </ul>
+                </li>
+                <li>Reno Tahoe International Airport (RNO) - <em>45 minutes to 1 hour drive to Lake Tahoe</em></li>
+                <li>Sacramento International Airport (SAC) - <em>2 to 3 hour drive to Lake Tahoe</em></li>
+              </ul>                           
+          </div>
+      </div>
+    </div>
+    <p class="text-left english">We recommend that you rent a car at the airport to drive to and around Lake Tahoe.</p>
+</div>
+
+
+<div id="aboutlaketahoe" class="container text-center">
+  <h3>
+    <span class="title-deco-left"></span>
+    <span class="title-text english">Lake Tahoe Area</span>
+    <span class="title-text spanish" style="display: none;">Area Lago Tahoe</span>
+    <span class="title-text french" style="display: none;">Lac Tahoe</span>
+    <span class="title-deco-right"></span>
+  </h3>
+  <br>
+  <p>We love the Lake Tahoe Area and we hope you will too.</p>
+  <p class="english">There are many activities to do while you are in Tahoe: hikes, water activities, beach, casinos, etc.
+    <a href="#" data-toggle="modal" data-target="#activity-modal">Here are some of our favorites</a>.
+  </p>
+  <img src="../images/gallery/tahoe_emerald_bay.jpg" class="img-responsive img-center" alt="EmeraldBay">
+  <br>
+  <div class="english subtitle"><b>Other amazing trips for those planning to extend their stay:</b></div>
+  <p class="text-left english">Around San Francisco, you can do day trips to Napa/Sonoma (wine country), Sausalito, Point Reyes, Santa Cruz (for the surfers), Stanford and Berkeley. For Monterey/Carmel and Big Sur, plan at least 2 days.</p>
+  <p class="text-left english">For road trips in California, you can drive on Highway 1 along the coast between San Diego and San Francisco stopping by LA, Santa Barbara, etc.
+  <p class="text-left english"> If you're willing to go further, the National Parks in California (Yosemite, Death Valley), Utah (Zion, Bryce Canyon, Arches, Canyonsland) and Arizona (Grand Canyon) are breathtaking and you can check out Las Vegas on your way.</p>
+  <p class="text-left english">Feel free to contact us if you'd like more information about these trips, we'll be happy to help you!</p>
+</div>
+
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container text-center">
@@ -1383,6 +1468,98 @@ a.btn-primary, .btn-primary {
             </div><!--//modal-content-->
             
         </div><!--//modal-dialog-->
+    </div>
+
+<div id="activity-modal" class="activity-modal modal in" tabindex="-1" role="dialog" aria-labelledby="activityModalLabel" style="display: none; padding-left: 0px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content container">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h3 class="modal-title text-center" id="activityModalLabel">Lake Tahoe Activities</h3>
+                </div><!--//modal-header-->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="event-col col-xs-12 col-sm-4">
+                            <h4 class="col-title text-center">Hikes</h4>
+                            <div class="figure-container"><img class="img-responsive" src="../images/gallery/tallac.jpg" alt=""></div>
+                            <p>Lake Tahoe offers many hikes for all levels of difficulty.</p>
+                            <p>
+                              <a href="https://www.yelp.com/biz/rubicon-trail-south-lake-tahoe" target="_blank">Rubicon Trail from Emerald Bay</a>
+                              and
+                              <a href="https://www.yelp.com/biz/mount-tallac-loop-south-lake-tahoe" target="_blank">Mount Tallac</a> 
+                              are among the most popular ones.
+                            </p>
+                            <p>You can find information about all hikes 
+                              <a href="http://www.tahoevacationguide.com/Activities/hiking.html" target="_blank">here</a> and 
+                              <a href="http://www.alltrails.com/explore?q=lake%20tahoe&b_tl_lat=39.57605638518604&b_tl_lng=-120.78094482421875&b_br_lat=38.67264490154078&b_br_lng=-119.17694091796875" target="_blank">here</a>.
+                            </p>
+                        </div><!--//event-col-->
+                        <div class="event-col col-xs-12 col-sm-4">
+                            <h4 class="col-title text-center">Gondola</h4>
+                            <div class="figure-container"><img class="img-responsive" src="../images/gallery/gondola2.png" alt=""></div>
+                            <p>If you want panoramic views of the lake without having to hike, head to the 
+                              <a href="http://www.skiheavenly.com/info/epic-discovery.aspx#/ScenicGondolaRide" target="_blank">Heavenly Gondola</a>.
+                            </p>
+                            <p>Squaw, which organized the 1960 Winter Olympics, also has an 
+                              <a href="http://squawalpine.com/events-things-do/aerial-tram-rides" target="_blank">Aerial Tram</a> 
+                              up the mountain. You can see the Olympic rings and museum but your views of the lake are from further away.</p>
+                        </div><!--//event-col-->                     
+                        <div class="event-col col-xs-12 col-sm-4">
+                            <h4 class="col-title text-center">Beach</h4>
+                            <div class="figure-container"><img class="img-responsive" src="../images/gallery/beach.jpg" alt=""></div>
+                            <p>Go relax at the beautiful Tahoe beaches!</p>
+                            <p>There are beaches <a href="http://laketahoe.com/content/top-10-lake-tahoe-beaches" target="_blank">all around the lake</a> and you can swim in the Summer.</p>
+                        </div><!--//event-col-->
+                    </div><!--//row-->
+                    <div class="row">
+                        <div class="event-col col-xs-12 col-sm-4">
+                            <h4 class="col-title text-center">Water Activities</h4>
+                            <div class="figure-container"><img class="img-responsive" src="../images/gallery/jetskirental.jpg" alt=""></div>
+                            <p>You have plenty to choose from including boat rides, jet ski, water skiing, pedalboat, stand up paddle, etc.</p>
+                            <p>Check out <a href="http://www.tahoevacationguide.com/Activities/watersports.html" target="_blank">this site</a> for details.</p>
+                        </div><!--//event-col-->
+                        <div class="event-col col-xs-12 col-sm-4">
+                            <h4 class="col-title text-center">Kayak</h4>
+                            <div class="figure-container"><img class="img-responsive" src="../images/gallery/Fannette_island.jpg" alt=""></div>
+                            <p>You can kayak at many places on the lake.</p>
+                            <p>Kayaking to <a href="http://www.parks.ca.gov/?page_id=1159" target="_blank">Fannette Island</a>, hiking up the tea house and jumping off the rocks into Emerald Bay sounds like a lot of fun.</p>
+                        </div><!--//event-col-->
+                        <div class="event-col col-xs-12 col-sm-4">
+                            <h4 class="col-title text-center">Casinos</h4>
+                            <div class="figure-container"><img class="img-responsive" src="../images/gallery/casino.jpg" alt=""></div>
+                            <p>On the Nevada side you can find several casinos.</p>
+                            <p>Some popular ones are the 
+                              <a href="https://laketahoe.regency.hyatt.com/en/hotel/activities/hotel-activities/casino.html" target="_blank">Hyatt Hotel and Casino</a> 
+                              on the North Shore and 
+                              <a href="https://www.montbleuresort.com/casino/" target="_blank">MontBleu Resort Casino and Spa</a> 
+                              on the South Shore.</p>
+                            <p>Good luck!</p>
+                        </div><!--//event-col-->
+                    </div><!--//row-->
+                    <div class="row">
+                        <div class="event-col col-xs-12 col-sm-4">
+                            <h4 class="col-title text-center">Adventure</h4>
+                            <div class="figure-container"><img class="img-responsive" src="../images/gallery/adventure.jpg" alt=""></div>
+                            <p>Zip, fly, rope, climb at <a href="http://www.skiheavenly.com/info/epic-discovery.aspx#/TheAdventurePass" target="_blank">Heavenly Epic Discovery</a>.</p>
+                            <p> You can also find ziplines and tree courses for all ages at <a href="http://northtahoeadventures.com/" target="_blank">Tahoe Treetop Adventure Park.</a></p>
+                        </div><!--//event-col-->
+                        <div class="event-col col-xs-12 col-sm-4">
+                            <h4 class="col-title text-center">More</h4>
+                            <div class="figure-container"><img class="img-responsive" src="../images/gallery/info.png" alt=""></div>
+                            <p>Lake Tahoe has a lot more to offer. Use these sites for more information:</p>
+                            <ul>
+                              <li><a href="http://www.visitinglaketahoe.com/" target="_blank">Visiting Lake Tahoe</a></li>
+                              <li><a href="http://www.tahoevacationguide.com/Activities/outdoors.html" target="_blank">Lake Tahoe Vacation Guide</a></li>
+                              <li><a href="http://www.fodors.com/world/north-america/usa/california/lake-tahoe" target="_blank">Fodor's Travel</a></li>
+                            </ul>
+                            <p>and for some fun facts and history check out
+                              <a href="https://keeptahoeblue.org/abouttahoe/historyfacts" target="_blank">Keep Tahoe Blue</a>.
+                            </p>
+                        </div><!--//event-col-->
+                    </div><!--//row-->
+                </div><!--//modal-body-->
+            </div><!--//modal-content-->
+        </div>
     </div>
 
 <script>
